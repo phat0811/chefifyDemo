@@ -18,6 +18,20 @@ button{
     padding: 0;
     cursor: pointer;
 }
+img{
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+boby{
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
 
 header{
     display: flex;
@@ -29,7 +43,7 @@ header{
     width: 100%; 
     height: 80px; 
     border-radius: 0px; 
-    position: fixed;
+    position: relative;
 
 }
 
@@ -211,7 +225,378 @@ header .header-group2 .nav ul li a {
 }
 
 
-.test{
-    height: 10000px;
-    width: auto;
+.header-under{
+    /* position: relative; */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 1440px;
+    height: 871px;
+    border-radius: 0px;
 }
+.header-under .box01{
+    position: absolute;
+    margin-left: 50px;
+    width: 413px;
+    height: 418px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFFFF;
+    border-color: #EA916EFF;
+    border-width: 1px; 
+    border-radius: 16px;
+    border-style: dashed; 
+
+}
+.header-under img{
+    width: 100%;
+    height: 100%;
+}
+
+.header-under .box01 .title{
+    margin-top: -15px;
+    font-family: Archivo;
+    font-size: 24px; 
+    line-height: 36px; 
+    font-weight: 700; 
+    color: #636AE8FF;
+    margin-bottom: 20px;
+}
+
+/******************************************** */
+
+.recipes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* position: absolute;
+    top: 956px; 
+    left: 0px;  */
+    width: 1440px; 
+    height: 552px; 
+    background: #FFFFFFFF; 
+    border-radius: 6px; 
+  }
+  
+  .title {
+    /* position: absolute; 
+    top: 64px; 
+    left: 521px;  */
+    font-family: Lora; 
+    font-size: 40px; 
+    line-height: 56px; 
+    font-weight: 700; 
+    color: #636AE8FF;
+  }
+  
+  .subtitle {
+    /* position: absolute; 
+    top: 126px; 
+    left: 483px;  */
+    font-family: Inter;
+    font-size: 20px; 
+    line-height: 30px; 
+    font-weight: 400; 
+    color: #171A1FFF;
+  }
+  
+  .recipe-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* position: absolute; 
+    top: 196px; 
+    left: 132px;  */
+    width: 270px; 
+    height: 292px; 
+    background: #FFFFFFFF; /* white */
+    
+  }
+  
+  .recipe-card {
+    width: 200px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .recipe-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .recipe-image {
+    /* position: absolute; 
+    top: 0px; 
+    left: -2px;  */
+    width: 273px; 
+    height: 176px; 
+    border-radius: 0px; 
+    border-width: 1px; 
+    border-color: #BCC1CAFF;
+    border-style: solid;
+  }
+  
+  .recipe-title {
+    /* position: absolute; 
+    top: 192px; 
+    left: 16px;  */
+    width: 153px; 
+    height: 52px; 
+    font-family: Archivo; /* Heading */
+    font-size: 16px; 
+    line-height: 26px; 
+    font-weight: 700; 
+    color: #171A1FFF;
+  }
+  
+  .recipe-time {
+    /* position: absolute; 
+    top: 256px; 
+    left: 16px;  */
+    width: 68px; 
+    height: 20px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    font-family: Inter; /* Body */
+    font-size: 11px; 
+    line-height: 18px; 
+    font-weight: 400; 
+    opacity: 1;
+  }
+
+  .recipe-button {
+    /* position: absolute; 
+    top: 186px; 
+    left: 216px;  */
+    width: 36px; 
+    height: 36px; 
+    padding: 0 0px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    color: #636AE8FF; /* primary-500 */
+    background: #FFFFFFFF; /* white */
+    opacity: 1; 
+    border-radius: 18px; 
+    border-width: 1px; 
+    border-color: #636AE8FF; /* primary-500 */
+    border-style: solid; 
+    gap: 0px;
+  }
+
+  /******************************************** */
+
+  .editors-pick {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    color: #4A4A4A;
+    margin-bottom: 10px;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 30px;
+  }
+  
+  .recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 0 20px;
+  }
+  
+  .recipe-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+  }
+  
+  .recipe-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .recipe-info {
+    padding: 15px;
+  }
+  
+  .recipe-title {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .recipe-time {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .author-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .author-photo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .author-name {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .recipe-description {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+  }
+
+
+    /******************************************** */
+
+    .footer {
+        background-color: #121212;
+        color: white;
+        padding: 40px 20px;
+      }
+      
+      .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin-bottom: 20px;
+        background-color: #121212;
+      }
+
+      .footer-column {
+        background-color: #121212;
+      }
+      
+      .footer-column h3 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        background-color: #121212;
+      }
+      
+      .footer-column p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        background-color: #121212;
+      }
+      
+      .footer-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background-color: #121212;
+      }
+      
+      .footer-links li {
+        margin-bottom: 10px;
+        background-color: #121212;
+      }
+      
+      .footer-links a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 0.9rem;
+        background-color: #121212;
+      }
+      
+      .footer-links a:hover {
+        text-decoration: underline;
+      }
+      
+      .email-form {
+        display: flex;
+        gap: 10px;
+        background-color: #121212;
+      }
+      
+      .email-input {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 0.9rem;
+      }
+      
+      .email-button {
+        background-color: #ff6347;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        border-radius: 4px;
+      }
+      
+      .email-button:hover {
+        background-color: #e5533d;
+      }
+      
+      .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        border-top: 1px solid #444;
+        padding-top: 20px;
+        background-color: #121212;
+      }
+      
+      .footer-logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #ff6347;
+      }
+      
+      .footer-bottom p {
+        font-size: 0.9rem;
+        margin: 0;
+        background-color: #121212;
+      }
+      
+      .footer-bottom-links {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+        padding: 0;
+        margin: 0;
+        background-color: #121212;
+      }
+      
+      .footer-bottom-links li a {
+        text-decoration: none;
+        color: white;
+        font-size: 0.9rem;
+        background-color: #121212;
+      }
+      
+      .footer-bottom-links li a:hover {
+        text-decoration: underline;
+      }
